@@ -1,6 +1,8 @@
-export const BlueButton = ({ label }: { label: string}) => {
+type buttonType = "button" | "submit"
+
+export const BlueButton = ({ label, type = "button" }: { label: string, type?: buttonType}) => {
 	return (
-		<button 
+		<button type={type}
 		className="
 		mt-8 flex items-center 
 		justify-center min-w-[290px] max-w-[290px] 
