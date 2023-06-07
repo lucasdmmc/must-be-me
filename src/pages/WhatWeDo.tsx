@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer"
 import introWhatWeDo from "../assets/images/intro-whatwedo.png"
 import why1 from "../assets/images/why-1.png"
 import why2 from "../assets/images/why-2.png"
+import { BlueButton } from "../components/BlueButton"
 
 export const WhatWeDo = () => {
 	return (
@@ -13,7 +14,7 @@ export const WhatWeDo = () => {
 				<div className="mt-8">
 					<h1 className="text-orange100 text-5xl font-normal mb-2.5">WHAT WE DO</h1>
 					<p className="text-xl leading-9 font-normal">We make safety education accessible to everyone</p>
-					<button className="rounded-3xl px-24 py-3 bg-sky-950 text-white my-8">OUR CLASSES</button>
+					<BlueButton label={"OUR CLASSES"}/>
 				</div>
 				<img src={introWhatWeDo} alt="" />
 			</div>
@@ -122,7 +123,7 @@ export const WhatWeDo = () => {
 						Must Be Me was the result of this ambition and has grown 
 						to become a recognised safety-education charity, with successful projects in the UK and Kenya to date.
 					</p>
-					<button className="rounded-3xl px-24 py-3 bg-sky-950 text-white my-8">GET IN TOUCH</button>
+					<BlueButton label={"GET IN TOUCH"}/>
 				</div>
 				<img src={why2} alt="" />
 			</div>
