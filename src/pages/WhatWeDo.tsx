@@ -1,4 +1,6 @@
 import { Header } from "../components/Header"
+import { NewsLetter } from "../components/NewsLetter"
+import { Footer } from "../components/Footer"
 import introWhatWeDo from "../assets/images/intro-whatwedo.png"
 import why1 from "../assets/images/why-1.png"
 import why2 from "../assets/images/why-2.png"
@@ -15,8 +17,8 @@ export const WhatWeDo = () => {
 				</div>
 				<img src={introWhatWeDo} alt="" />
 			</div>
-			<div className="bg-orange-200 h-120 mx-auto pb-20">
-				
+
+			<div className="bg-orange-200 h-120 mx-auto pb-20">			
 				<div className="flex flex-col items-center px-36 text-center">
 					<p className="pt-28 px-28 pb-10 leading-7">
 						Safety is a daily issue for many people around the world. Every day, intimidation, 
@@ -38,117 +40,96 @@ export const WhatWeDo = () => {
 					</p>
 				</div>
 			</div>
-				<div className="bg-blue-950 h-120 flex flex-col items-center pt-16">
-					<h1 className="mx-auto text-4xl pb-10 text-white">HOW WE DO IT</h1>
-					<div className="flex flex-row " style={{ opacity: 1, }}>
-						<div className="item slick-slide slick-cloned " style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail"/>					
-						</div>
-						<div className="item slick-slide slick-cloned" style={{width: 310}}>
-							<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail"/>					
-						</div>
-						<div className="item slick-slide slick-cloned" style={{width: 310}}>
-							<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail"/>					
-						</div>
-						
-						{/* <div className="item slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style={{width: 310}}>
-							<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" style={{width: 310}}>
-							<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide" data-slick-index="2" aria-hidden="true" style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide" data-slick-index="3" aria-hidden="true" style={{width: 310}}>
-							<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide" data-slick-index="4" aria-hidden="true" style={{width: 310}}>
-							<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide" data-slick-index="5" aria-hidden="true" style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned slick-center" data-slick-index="8" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div>
-						<div className="item slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style={{width: 310}}>
-							<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
-						</div> */}
+
+			<div className="bg-blue-950 h-120 flex flex-col items-center pt-16">
+				<h1 className="mx-auto text-4xl pb-10 text-white">HOW WE DO IT</h1>
+				<div className="flex flex-row " style={{ opacity: 1, }}>
+					<div className="item slick-slide slick-cloned " style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail"/>					
 					</div>
-					<p className="pt-10 pb-10 text-white">Our classes are unique. Created by our chair and founder, Mayra, they are designed to work for people of all backgrounds and abilities.</p>
+					<div className="item slick-slide slick-cloned" style={{width: 310}}>
+						<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail"/>					
+					</div>
+					<div className="item slick-slide slick-cloned" style={{width: 310}}>
+						<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail"/>					
+					</div>
+					
+					{/* <div className="item slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style={{width: 310}}>
+						<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-active" data-slick-index="1" aria-hidden="false" style={{width: 310}}>
+						<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide" data-slick-index="2" aria-hidden="true" style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide" data-slick-index="3" aria-hidden="true" style={{width: 310}}>
+						<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide" data-slick-index="4" aria-hidden="true" style={{width: 310}}>
+						<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide" data-slick-index="5" aria-hidden="true" style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned slick-center" data-slick-index="8" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="157" height="189" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-2.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="147" height="177" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div>
+					<div className="item slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style={{width: 310}}>
+						<img width="153" height="184" src="https://www.mustbeme.org/wp-content/uploads/2021/09/slider-icon-3.png" className="attachment-thumbnail size-thumbnail" alt="" decoding="async" loading="lazy" />					
+					</div> */}
 				</div>
+				<p className="pt-10 pb-10 text-white">Our classes are unique. Created by our chair and founder, Mayra, they are designed to work for people of all backgrounds and abilities.</p>
+			</div>
 
-				<div className="bg-white h-120 flex flex-col items-center pt-16">
-					<h1 className="text-orange100 text-4xl pb-5">WHY WE DO IT</h1>
-					<p>We believe that everyone has the right to feel safe.</p>
-				</div>
+			<div className="bg-white h-120 flex flex-col items-center pt-16">
+				<h1 className="text-orange100 text-4xl pb-5">WHY WE DO IT</h1>
+				<p>We believe that everyone has the right to feel safe.</p>
+			</div>
 
-				<div className="bg-white flex flex-row items-center px-44 gap-12 pb-10 leading-7">
-					<img src={why1} alt="" />
+			<div className="bg-white flex flex-row items-center px-44 gap-12 pb-10 leading-7">
+				<img src={why1} alt="" />
+				<p>
+					Whilst working with young people and vulnerable groups around the world, 
+					our founder Mayra noticed huge gaps in the availability of personal safety education. 
+					This lack of access to resources – and the potential impact on communities – motivated her to create change.
+				</p>
+			</div>
+
+			<div className="bg-white flex flex-row items-center px-44 pb-20 gap-12 leading-7">
+				<div className="font-normal">
 					<p>
-						Whilst working with young people and vulnerable groups around the world, 
-						our founder Mayra noticed huge gaps in the availability of personal safety education. 
-						This lack of access to resources – and the potential impact on communities – motivated her to create change.
+						She set out to create a programme that would work for all people, not just those who could pay for expensive self-defence classes. 
+						It had to involve a <strong>short time commitment</strong>, making it <strong>flexible</strong> enough for busy students and communities. The programme needed to be 
+						<strong> universally understandable</strong> as well as <strong>culturally and physically inclusive</strong>. 
 					</p>
-				</div>
-
-				<div className="bg-white flex flex-row items-center px-44 gap-12 leading-7">
-					<div>
-						<p>
-							She set out to create a programme that would work for all people, not just those who could pay for expensive self-defence classes. 
-							It had to involve a <strong>short time commitment</strong>, making it <strong>flexible</strong> enough for busy students and communities. The programme needed to be 
-							<strong> universally understandable</strong> as well as <strong>culturally and physically inclusive</strong>. 
-						</p>
-						<p className="pt-10">
-							Must Be Me was the result of this ambition and has grown 
-							to become a recognised safety-education charity, with successful projects in the UK and Kenya to date.
-						</p>
-						<button className="rounded-3xl px-24 py-3 bg-sky-950 text-white my-8">GET IN TOUCH</button>
-					</div>
-					<img src={why2} alt="" />
-				</div>
-
-				<div className="bg-orange-200 h-120 flex flex-col items-center pb-20">
-					<h1 className="text-4xl pt-28 mx-auto text-white">KEEP UP TO DATE WITH OUR WORK</h1>
-					<button className="rounded-3xl px-24 py-3 bg-sky-950 text-white my-8">SIGN UP</button>
-					<p className="pt-10 px-40 text-center leading-8 text-sky-950">
-						Must Be Me will use the information you provide on this form to send you news about our mission, 
-						including ways you can support our cause. Your personal information will be kept private and securely 
-						held in compliance with GDPR as stated in our Privacy Policy. You can unsubscribe at any time using 
-						the link at the bottom of our emails.
+					<p className="pt-10">
+						Must Be Me was the result of this ambition and has grown 
+						to become a recognised safety-education charity, with successful projects in the UK and Kenya to date.
 					</p>
+					<button className="rounded-3xl px-24 py-3 bg-sky-950 text-white my-8">GET IN TOUCH</button>
 				</div>
+				<img src={why2} alt="" />
+			</div>
 
-				<div className="bg-sky-950 h-120 flex flex-col pb-5">
-					<div className="flex flex-row justify-between">
-						<img src="https://www.mustbeme.org/wp-content/themes/mustbeme/assets/images/logo-footer.svg" alt="" className="p-20"/>
-						<a href="https://www.instagram.com/mustbemecharity/">
-							<img src="https://www.mustbeme.org/wp-content/themes/mustbeme/assets/images/icon-instagram.svg" alt="" className="p-20"/>
-						</a>
-					</div>
-					<div className="px-20 text-white leading-7">
-						<p>Copyright 2023 Must Be Me.</p>
-						<p>Registered Charity in England & Wales (No. 1179393).</p>
-						<p>Privacy Policy. Children & Vulnerable persons policy</p>
-						<p>Registered Office: Office T15 Hurlingham Studio Ranelagh Gardens London SW6 3PA</p>
-					</div>
-				</div>
+			
+			<NewsLetter />
+			<Footer />
 
 			</div>
 		
