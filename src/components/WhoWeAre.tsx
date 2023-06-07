@@ -1,4 +1,5 @@
-import whoAreWeImage from '../../../assets/images/whoarewe.jpeg'
+
+import whoAreWeImage from "../assets/images/whoarewe.jpeg"
 
 export const WhoWeAre = () => {
   return (

@@ -1,13 +1,13 @@
-import { Header } from '../../components/Header'
 
 import pin from '../../assets/images/stat-pin.svg'
 
-import { Intro } from './components/Intro'
-import { Slider } from './components/Slider'
-import { Footer } from './components/Footer'
-import { WhoWeAre } from './components/WhoWeAre'
-import { OurClasses } from './components/OurClasses'
-import { NewsLetter } from './components/NewLetter'
+import { Header } from '../../components/Header'
+import { Intro } from '../../components/Intro'
+import { Slider } from '../../components/Slider'
+import { Footer } from '../../components/Footer'
+import { WhoWeAre } from '../../components/WhoWeAre'
+import { OurClasses } from '../../components/OurClasses'
+import { NewsLetter } from '../../components/NewsLetter'
 
 export const Home = () => {
   return (

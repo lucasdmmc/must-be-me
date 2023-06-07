@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import introHome from '../../../assets/images/intro-home.png'
+import introHome from '../assets/images/intro-home.png'
 
 export const Intro = () => {
   return (

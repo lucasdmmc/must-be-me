@@ -1,4 +1,4 @@
-import iconNewsletterImage from '../../../assets/images/icon-newsletter.svg'
+import iconNewsletterImage from '../assets/images/icon-newsletter.svg'
 
 export const NewsLetter = () => {
   return (

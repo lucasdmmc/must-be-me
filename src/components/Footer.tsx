@@ -1,5 +1,5 @@
-import logoFooter from '../../assets/images/logo-footer.svg'
-import logoInstagram from '../../assets/images/icon-instagram.svg'
+import logoFooter from '../assets/images/logo-footer.svg'
+import logoInstagram from '../assets/images/icon-instagram.svg'
 
 import { Link } from 'react-router-dom'
 

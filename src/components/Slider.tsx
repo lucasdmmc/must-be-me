@@ -1,7 +1,7 @@
-import quoteOrange from '../../../assets/images/quote-orange.svg'
-import quoteWhite from '../../../assets/images/quote-white.svg'
-import quoteMarkBlue from '../../../assets/images/quote-mark.png'
-import quoteMarkOange from '../../../assets/images/quote-mark-orange.png'
+import quoteOrange from '../assets/images/quote-orange.svg'
+import quoteWhite from '../assets/images/quote-white.svg'
+import quoteMarkBlue from '../assets/images/quote-mark.png'
+import quoteMarkOange from '../assets/images/quote-mark-orange.png'
 import { ArrowLeft, ArrowRight } from 'phosphor-react'
 
 export const Slider = () => {

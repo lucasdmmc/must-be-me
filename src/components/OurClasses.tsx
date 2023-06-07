@@ -1,4 +1,4 @@
-import ourClassesImage from '../../../assets/images/our-classes.png'
+import ourClassesImage from '../assets/images/our-classes.png'
 
 export const OurClasses = () => {
   return (
