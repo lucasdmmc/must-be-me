@@ -1,14 +1,16 @@
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logoImg from '../assets/images/logo.svg'
-import openMenuImg from '../assets/images/icon-menu.svg'
+import closeMenuImg from '../assets/images/icon-menu-close.svg'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
-interface HeaderProps {
+interface MenuMobileProps {
   menuIsVisible: boolean
   setMenuIsVisible: Dispatch<SetStateAction<boolean>>
 }
 
-export const Header = ({ setMenuIsVisible, menuIsVisible }: HeaderProps) => {
+export const MenuMobile = ({
+  menuIsVisible,
+  setMenuIsVisible,
+}: MenuMobileProps) => {
   const [activeItem, setActiveItem] = useState('')
   const location = useLocation()
 
@@ -28,26 +30,27 @@ export const Header = ({ setMenuIsVisible, menuIsVisible }: HeaderProps) => {
   }, [location.pathname])
 
   return (
-    <div className="w-full pt-10 flex justify-between items-center">
-      <Link to="/">
-        <img src={logoImg} alt="" />
-      </Link>
-
+    <div
+      className={`absolute transition duration-300 pointer-events-none opacity-0 w-full h-full top-0 left-0 right-0 bottom-0 z-10 flex items-center justify-center bg-lightBrown ${
+        menuIsVisible && 'opacity-100 pointer-events-auto'
+      }`}
+    >
       <img
-        className="md:hidden absolute top-12 right-4 w-7"
-        onClick={() => setMenuIsVisible(true)}
-        src={openMenuImg}
+        onClick={() => setMenuIsVisible(false)}
+        className="absolute top-12 right-4 w-7"
+        src={closeMenuImg}
         alt=""
       />
-
-      <ul className="hidden md:flex gap-6 text-xl uppercase text-zinc-800 font-semibold">
+      <ul className="flex flex-col gap-8 text-xl justify-center uppercase text-zinc-800 font-semibold">
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
-            activeItem === 'home' ? 'border-b-4 border-orange100' : ''
+            activeItem === 'home' ? ' border-l-4 border-orange100' : ''
           }`}
           onClick={() => handleItemClick('home')}
         >
-          <Link to="/">Home</Link>
+          <Link className="ml-1" to="/">
+            Home
+          </Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${

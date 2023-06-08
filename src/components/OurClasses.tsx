@@ -2,10 +2,13 @@ import ourClassesImage from '../assets/images/our-classes.png'
 
 export const OurClasses = () => {
   return (
-    <div className="flex justify-between items-center gap-10 pb-20 bg-zinc-100">
-      <img src={ourClassesImage} alt="" />
+    <div
+      data-aos="fade-up"
+      className="flex flex-wrap sm:flex-nowrap -mt-10 sm:mt-0 justify-between items-center gap-10 pb-20 bg-zinc-100"
+    >
+      <img className="px-6 sm:px-0" src={ourClassesImage} alt="" />
 
-      <div className="flex flex-col gap-4 px-10">
+      <div className="flex flex-col items-center sm:items-start gap-4 px-10">
         <span className="text-4xl text-orange100 uppercase font-semibold">
           Our classes
         </span>
