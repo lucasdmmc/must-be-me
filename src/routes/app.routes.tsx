@@ -4,6 +4,7 @@ import { WhatWeDo } from '../pages/WhatWeDo'
 import { WhoWeAre } from '../pages/WhoWeAre'
 import { ContactUs } from '../pages/ContactUs'
 import { DefaultLayout } from '../DefaultLayout'
+import { OurClasses } from '../pages/OurClasses'
 
 export const AppRoutes = () => {
   return (
@@ -12,6 +13,7 @@ export const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/what-we-do" element={<WhatWeDo />} />
         <Route path="/who-we-are" element={<WhoWeAre />} />
+        <Route path="/our-classes" element={<OurClasses />} />
         <Route path="/contact-us" element={<ContactUs />} />
       </Route>
     </Routes>

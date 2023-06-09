@@ -4,11 +4,10 @@ import logoImg from '../assets/images/logo.svg'
 import openMenuImg from '../assets/images/icon-menu.svg'
 
 interface HeaderProps {
-  menuIsVisible: boolean
   setMenuIsVisible: Dispatch<SetStateAction<boolean>>
 }
 
-export const Header = ({ setMenuIsVisible, menuIsVisible }: HeaderProps) => {
+export const Header = ({ setMenuIsVisible }: HeaderProps) => {
   const [activeItem, setActiveItem] = useState('')
   const location = useLocation()
 
@@ -22,8 +21,8 @@ export const Header = ({ setMenuIsVisible, menuIsVisible }: HeaderProps) => {
       setActiveItem('home')
     } else if (currentPath === '/what-we-do') {
       setActiveItem('whatWeDo')
-    } else {
-      setActiveItem('')
+    } else if (currentPath === '/our-classes') {
+      setActiveItem('ourClasses')
     }
   }, [location.pathname])
 

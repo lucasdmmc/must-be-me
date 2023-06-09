@@ -4,7 +4,6 @@ import { Intro } from '../../components/Intro'
 import { Slider } from '../../components/Slider'
 import { WhoWeAre } from '../../components/WhoWeAre'
 import { OurClasses } from '../../components/OurClasses'
-import { NewsLetter } from '../../components/NewsLetter'
 import { useEffect } from 'react'
 import Aos from 'aos'
 
@@ -84,7 +83,6 @@ export const Home = () => {
 
       <WhoWeAre />
       <OurClasses />
-      <NewsLetter />
     </div>
   )
 }

@@ -9,6 +9,7 @@ export default {
       colors: {
         darkBlue: '#061948',
         lightBrown: '#fdebe0',
+        darkBrown: '#FEDCC8',
 
         // text
 
