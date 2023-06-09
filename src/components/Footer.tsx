@@ -12,7 +12,7 @@ export const Footer = () => {
           <img src={logoInstagram} alt="" />
         </Link>
       </div>
-      <span className="text-[14px] sm:text-base text-white leading-relaxed">
+      <span className="text-sm sm:text-base text-white leading-relaxed">
         Copyright 2023 Must Be Me. <br />
         Registered Charity in England & Wales (No. 1179393). <br />
         Privacy Policy. Children & Vulnerable persons policy <br />
