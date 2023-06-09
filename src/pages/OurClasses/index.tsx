@@ -8,13 +8,13 @@ import { Faqs } from '../../components/Faqs'
 
 export const OurClasses = () => {
   return (
-    <div>
+    <div className="w-full">
       <div className=" w-full flex flex-wrap lg:flex-nowrap justify-center md:justify-between items-center gap-4 mt-20 pb-8 md:border-b ">
         <div className="flex flex-col gap-2">
           <strong className="uppercase  text-center md:text-start text-3xl sm:text-5xl text-orange100 font-semibold leading-[48px]">
             Our Classes
           </strong>
-          <span className="text-center sm:text-start text-lg w-[500px] sm:text-3xl sm:mt-4 text-darkBlue">
+          <span className="text-center sm:text-start text-lg sm:text-3xl sm:mt-4 text-darkBlue">
             What would better personal safety mean to you?
           </span>
         </div>
@@ -25,8 +25,8 @@ export const OurClasses = () => {
         />
       </div>
 
-      <div className="mt-10 mb-10 h-[200px] p-44 bg-zinc-100 flex flex-col justify-center items-center rounded-lg">
-        <span className="w-[780px] text-darkBlue text-center text-xl">
+      <div className="bg-zinc-100 flex justify-center items-center p-10 md:p-24 my-10 rounded-lg">
+        <span className="text-darkBlue md:text-center text-sm text-center md:text-xl">
           At Must Be Me, every class is individual because every attendee is
           individual. Delivery of the sessions is tailored to fit the
           demographics of the students on that day, ensuring that everyone can
@@ -34,13 +34,13 @@ export const OurClasses = () => {
         </span>
       </div>
       <div className="bg-orange100 rounded-lg flex flex-col justify-center items-center mb-10">
-        <div className="flex items-center gap-12 px-40 py-20 -mb-12">
-          <img className="w-[140px]" src={stepOne} alt="" />
-          <div className="flex flex-col gap-2">
-            <span className="text-2xl font-semibold text-darkBlue">
+        <div className="xl:flex flex flex-col lg:flex-row items-center justify-center xl:text-start gap-12 px-10 xl:px-40 py-20 -mb-12">
+          <img src={stepOne} alt="" />
+          <div className="flex flex-col sm:items-center lg:items-start gap-2">
+            <span className="text-2xl text-center font-semibold text-darkBlue">
               Step One
             </span>
-            <p className="text-xl text-justify leading-7">
+            <p className="text-base md:text-xl text-justify leading-7">
               The first step in each class is to understand what safety means to
               each candidate individually. Perhaps it’s being able to plan a
               safe route home from work or knowing that, should you run into
@@ -51,19 +51,19 @@ export const OurClasses = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="hidden xl:flex justify-center items-center">
           <img
             className="flex justify-center w-[870px]"
             src={stepPath}
             alt=""
           />
         </div>
-        <div className="flex items-center gap-12 px-40 py-20 -mt-12">
-          <div className="flex flex-col gap-2 ">
-            <span className="text-2xl font-semibold text-darkBlue">
+        <div className="xl:flex flex flex-col-reverse lg:flex-row items-center justify-center xl:text-start gap-12 px-10 xl:px-40 py-20 -mt-14">
+          <div className="flex flex-col sm:items-center lg:items-start gap-2">
+            <span className="text-2xl text-center font-semibold text-darkBlue">
               Step Two
             </span>
-            <p className="text-xl text-justify leading-7">
+            <p className="text-base md:text-xl text-justify leading-7">
               As well as teaching you to understand and assess situations for
               safety, our training provides response skills. These include
               verbal and physical self-defence techniques that focus on escape
@@ -72,12 +72,12 @@ export const OurClasses = () => {
               necessary, in proportion to the threat, to ensure safety.
             </p>
           </div>
-          <img className="w-[140px]" src={stepTwo} alt="" />
+          <img src={stepTwo} alt="" />
         </div>
       </div>
 
-      <div className="bg-zinc-100 flex justify-center items-center p-24">
-        <p className="text-center text-darkBlue text-xl">
+      <div className="bg-zinc-100 flex justify-center items-center p-10 md:p-24">
+        <p className="text-darkBlue md:text-center text-sm text-center md:text-xl">
           Must Be Me sessions are designed to include the most achievable
           techniques for all body types and levels of strength. You don’t need
           any previous experience of safety education or self-defence to attend,
@@ -93,7 +93,7 @@ export const OurClasses = () => {
           <span className="text-4xl text-orange100 uppercase font-semibold">
             Book a class
           </span>
-          <span className=" leading-relaxed w-[500px]">
+          <span className=" leading-relaxed text-center sm:text-start">
             Ready to experience Must Be Me for yourself and improve your safety
             confidence? Use our handy online tool to book your free class today.
           </span>
