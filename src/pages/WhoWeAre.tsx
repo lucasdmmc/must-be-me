@@ -1,6 +1,3 @@
-import { Header } from '../components/Header'
-import { NewsLetter } from '../components/NewsLetter'
-import { Footer } from '../components/Footer'
 import { BlueButton } from '../components/BlueButton'
 import OurClassesImage from '../assets/images/our-classes.png'
 import MayraPicture from '../assets/images/Mayra-Must-Be-Me-Founder.jpg'
@@ -9,7 +6,6 @@ import WhoWeArePicture from '../assets/images/intro-whoweare.png'
 export const WhoWeAre = () => {
   return (
     <div className="max-w-[1360px] mt-0 mb-10 mx-auto">
-      <Header />
       <div className="flex justify-center">
         <img src={WhoWeArePicture} alt="" style={{ width: 600 }} />
       </div>
@@ -89,8 +85,6 @@ export const WhoWeAre = () => {
           <BlueButton label={'FIND OUT HOW WE CAN HELP'} />
         </div>
       </div>
-      <NewsLetter />
-      <Footer />
     </div>
   )
 }

@@ -20,7 +20,7 @@ export const MenuMobile = ({
 
   useEffect(() => {
     const currentPath = location.pathname
-    if (currentPath === '/') {
+    if (currentPath === '/home') {
       setActiveItem('home')
     } else if (currentPath === '/what-we-do') {
       setActiveItem('whatWeDo')
@@ -48,7 +48,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('home')}
         >
-          <Link className="ml-1" to="/">
+          <Link className="ml-1" to="/home">
             Home
           </Link>
         </li>

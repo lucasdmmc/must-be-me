@@ -1,13 +1,9 @@
-import { Header } from '../components/Header'
-import { NewsLetter } from '../components/NewsLetter'
-import { Footer } from '../components/Footer'
 import { BlueButton } from '../components/BlueButton'
 import introContactImg from '../assets/images/intro-contact.png'
 
 export const ContactUs = () => {
   return (
     <div>
-      <Header />
       <div className="flex justify-center mt-20">
         <img src={introContactImg} alt="" style={{ width: 600 }} />
       </div>
@@ -49,8 +45,6 @@ export const ContactUs = () => {
           </form>
         </div>
       </div>
-      <NewsLetter />
-      <Footer />
     </div>
   )
 }

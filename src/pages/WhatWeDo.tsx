@@ -1,6 +1,3 @@
-import { Header } from '../components/Header'
-import { NewsLetter } from '../components/NewsLetter'
-import { Footer } from '../components/Footer'
 import introWhatWeDo from '../assets/images/intro-whatwedo.png'
 import why1 from '../assets/images/why-1.png'
 import why2 from '../assets/images/why-2.png'
@@ -9,7 +6,6 @@ import { BlueButton } from '../components/BlueButton'
 export const WhatWeDo = () => {
   return (
     <div className="max-w-[1360px] mx-auto bg-white">
-      <Header />
       <div className="flex items-center space-x-72 p-28">
         <div className="mt-8">
           <h1 className="text-orange100 text-5xl font-normal mb-2.5">
@@ -167,9 +163,6 @@ export const WhatWeDo = () => {
         </div>
         <img src={why2} alt="" />
       </div>
-
-      <NewsLetter />
-      <Footer />
     </div>
   )
 }
