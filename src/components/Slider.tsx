@@ -100,7 +100,7 @@ export const Slider = () => {
               <span
                 className={`absolute ${
                   index === 0
-                    ? 'top-24 left-20 text-sm sm:left-10 sm:text-lg'
+                    ? 'top-24 left-20 text-xs sm:left-10 sm:text-lg'
                     : 'top-10'
                 } p-8 ${
                   index === 0

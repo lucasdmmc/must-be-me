@@ -46,34 +46,34 @@ export const Home = () => {
         className="mt-10 bg-darkBlue w-full h-auto sm:h-[450px] rounded-md p-10"
       >
         <div className="flex flex-wrap sm:flex-nowrap justify-between relative items-center">
-          <div className="relative">
+          <div className="relative flex flex-col items-center justify-center gap-4">
             <img src={pin} alt="" />
-            <strong className="text-orange100 text-5xl absolute top-[150px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <strong className="text-orange100 text-5xl absolute top-[150px] left-[52%] transform -translate-x-1/2 -translate-y-1/2">
               2.3M
             </strong>
-            <span className="block text-center mt-2 text-white ">
+            <span className="block text-center text-sm md:text-base mt-2 text-white ">
               adults aged 17-74 experienced domestic <br /> abuse in the UK in
               the past year.
             </span>
           </div>
 
-          <div className="relative">
+          <div className="relative flex flex-col items-center gap-4">
             <img src={pin} alt="" />
-            <strong className="text-orange100 text-5xl absolute top-[150px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <strong className="text-orange100 text-5xl absolute top-[150px] left-[52%] transform -translate-x-1/2 -translate-y-1/2">
               47%
             </strong>
-            <span className="block text-center mt-2 text-white ">
+            <span className="block text-center text-sm md:text-base mt-2 text-white ">
               of transgender people are sexually <br /> assaulted at some point
               in their lifetime
             </span>
           </div>
 
-          <div className="relative">
+          <div className="relative flex flex-col items-center gap-4">
             <img src={pin} alt="" />
-            <strong className="text-orange100 text-5xl absolute top-[150px] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <strong className="text-orange100 text-5xl absolute top-[150px] left-[52%] transform -translate-x-1/2 -translate-y-1/2">
               28%
             </strong>
-            <span className="block text-center mt-2 text-white ">
+            <span className="block text-center text-sm md:text-base mt-2 text-white ">
               of females aged 14-21 feel less safe going <br /> out alone in
               public than before lockdown.
             </span>
