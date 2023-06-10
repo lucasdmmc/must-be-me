@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import closeMenuImg from '../assets/images/icon-menu-close.svg'
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
@@ -20,12 +20,18 @@ export const MenuMobile = ({
 
   useEffect(() => {
     const currentPath = location.pathname
-    if (currentPath === '/home') {
+    if (currentPath === '/') {
       setActiveItem('home')
     } else if (currentPath === '/what-we-do') {
       setActiveItem('whatWeDo')
-    } else {
-      setActiveItem('')
+    } else if (currentPath === '/who-we-are') {
+      setActiveItem('whoWeAre')
+    } else if (currentPath === '/our-classes') {
+      setActiveItem('ourClasses')
+    } else if (currentPath === '/get-involved') {
+      setActiveItem('getInvolved')
+    } else if (currentPath === '/contact-us') {
+      setActiveItem('contactUs')
     }
   }, [location.pathname])
 
@@ -43,14 +49,14 @@ export const MenuMobile = ({
       />
       <ul className="flex flex-col gap-8 text-xl justify-center uppercase text-zinc-800 font-semibold">
         <li
-          className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
-            activeItem === 'home' ? ' border-l-4 border-orange100' : ''
+          className={`transition w-[70px] duration-300 hover:text-zinc-500 cursor-pointer ${
+            activeItem === 'home' ? ' border-b-4 border-orange100' : ''
           }`}
           onClick={() => handleItemClick('home')}
         >
-          <Link className="ml-1" to="/home">
+          <a className="ml-1" href="/">
             Home
-          </Link>
+          </a>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -58,7 +64,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('whatWeDo')}
         >
-          <Link to="/what-we-do">What we do</Link>
+          <a href="/what-we-do">What we do</a>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -66,7 +72,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('whoWeAre')}
         >
-          <Link to="/who-we-are">Who we are</Link>
+          <a href="/who-we-are">Who we are</a>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -74,7 +80,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('ourClasses')}
         >
-          <Link to="/our-classes">Our classes</Link>
+          <a href="/our-classes">Our classes</a>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -82,7 +88,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('getInvolved')}
         >
-          <Link to="/get-involved">Get involved</Link>
+          <a href="/get-involved">Get involved</a>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -90,7 +96,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('contactUs')}
         >
-          <Link to="/contact-us">Contact us</Link>
+          <a href="/contact-us">Contact us</a>
         </li>
       </ul>
     </div>
