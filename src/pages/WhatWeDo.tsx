@@ -10,11 +10,11 @@ export const WhatWeDo = () => {
     <div>
       <div className="w-full flex flex-wrap lg:flex-nowrap justify-center md:justify-between mt-5 md:mt-20 items-center">
         <div className="mt-8 flex flex-col justify-center items-center md:items-start">
-          <h1 className="text-orange100 text-3xl md:text-5xl font-normal mb-2.5">
+          <h1 className="text-orange100 text-3xl md:text-5xl font-semibold mb-2.5">
             WHAT WE DO
           </h1>
-          <p className="w-[400px] text-base text-center md:text-start md:text-xl leading-7 font-normal">
-            We make safety education accessible to everyone
+          <p className="text-center sm:text-start text-lg sm:text-3xl sm:mt-4 text-darkBlue">
+            We make safety education accessible <br /> to everyone
           </p>
           <Button label="Our classes" />
         </div>
