@@ -6,6 +6,18 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #FFF8F3;
-  
+  background: #FFF8F3; 
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdebe0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #f47734;
 }

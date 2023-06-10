@@ -10,7 +10,7 @@ export const NewsLetter = () => {
         alt=""
       />
       <div className="flex flex-col items-center justify-center pt-20 sm:p-20">
-        <strong className="text-xl sm:text-4xl text-white uppercase">
+        <strong className="text-xl sm:text-4xl text-white uppercase my-4">
           Keep up to date with our work
         </strong>
         <Button label="Sign up" />

@@ -22,10 +22,6 @@ export const WhoWeAre = () => {
           Our work enhances wellbeing and safeguards lives and communities.
         </span>
         <Button label="Meet our team" />
-
-        <button className="mt-4 flex items-center justify-center min-w-[290px] max-w-[290px] uppercase text-white cursor-pointer transition duration-300 hover:bg-blue-900 bg-darkBlue p-5 rounded-[27.5px]">
-          Meet our team
-        </button>
       </div>
       <img
         className="object-cover w-[500px] sm:w-[700px] relative sm:h-[400px] sm:mr-32 p-10 sm:p-0 overflow-hidden flex items-center justify-center"
