@@ -3,7 +3,7 @@ import introWhatWeDo from '../assets/images/intro-whatwedo.png'
 import arrowDown from '../assets/images/arrow-down-blue.svg'
 import why1 from '../assets/images/why-1.png'
 import why2 from '../assets/images/why-2.png'
-import { BlueButton } from '../components/BlueButton'
+import { Button } from '../components/Button'
 
 export const WhatWeDo = () => {
   return (
@@ -16,7 +16,7 @@ export const WhatWeDo = () => {
           <p className="w-[400px] text-base text-center md:text-start md:text-xl leading-7 font-normal">
             We make safety education accessible to everyone
           </p>
-          <BlueButton label={'OUR CLASSES'} />
+          <Button label="Our classes" />
         </div>
         <img className="mt-10 md:mt-0" src={introWhatWeDo} alt="" />
       </div>
@@ -89,7 +89,7 @@ export const WhatWeDo = () => {
             recognised safety-education charity, with successful projects in the
             UK and Kenya to date.
           </p>
-          <BlueButton label={'GET IN TOUCH'} />
+          <Button label="Get in touch" />
         </div>
         <img src={why2} alt="" />
       </div>

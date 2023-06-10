@@ -1,4 +1,5 @@
 import whoAreWeImage from '../assets/images/whoarewe.jpeg'
+import { Button } from './Button'
 
 export const WhoWeAre = () => {
   return (
@@ -20,6 +21,7 @@ export const WhoWeAre = () => {
           age, background or geography – with free safety-improvement training.
           Our work enhances wellbeing and safeguards lives and communities.
         </span>
+        <Button label="Meet our team" />
 
         <button className="mt-4 flex items-center justify-center min-w-[290px] max-w-[290px] uppercase text-white cursor-pointer transition duration-300 hover:bg-blue-900 bg-darkBlue p-5 rounded-[27.5px]">
           Meet our team

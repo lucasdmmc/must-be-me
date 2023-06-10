@@ -4,6 +4,7 @@ import ourClassesImg from '../../assets/images/our-classes.png'
 import stepOne from '../../assets/images/step-one.png'
 import stepPath from '../../assets/images/step-path.png'
 import stepTwo from '../../assets/images/step-two.png'
+import { Button } from '../../components/Button'
 import { Faqs } from '../../components/Faqs'
 
 export const OurClasses = () => {
@@ -97,9 +98,8 @@ export const OurClasses = () => {
             Ready to experience Must Be Me for yourself and improve your safety
             confidence? Use our handy online tool to book your free class today.
           </span>
-          <button className=" mt-4 flex items-center justify-center min-w-[290px] max-w-[290px] uppercase text-white cursor-pointer transition duration-300 hover:bg-blue-900 bg-darkBlue p-5 rounded-[27.5px]">
-            Book a class
-          </button>
+
+          <Button label="Book a class" />
         </div>
         <img className="px-6 sm:px-0" src={ourClassesImg} alt="" />
       </div>

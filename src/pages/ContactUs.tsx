@@ -1,4 +1,4 @@
-import { BlueButton } from '../components/BlueButton'
+import { Button } from '../components/Button'
 import introContactImg from '../assets/images/intro-contact.png'
 
 export const ContactUs = () => {
@@ -40,7 +40,7 @@ export const ContactUs = () => {
               placeholder="Message"
             ></textarea>
             <div className="flex items-center">
-              <BlueButton type="submit" label="SUBMIT" />
+              <Button type="submit" label="Submit" />
             </div>
           </form>
         </div>
