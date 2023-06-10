@@ -1,11 +1,11 @@
 import pin from '../../assets/images/stat-pin.svg'
-
+import { feedbacks } from '../../data/feedbacks.ts'
 import { Intro } from '../../components/Intro'
-import { Slider } from '../../components/Slider'
 import { WhoWeAre } from '../../components/WhoWeAre'
 import { OurClasses } from '../../components/OurClasses'
 import { useEffect } from 'react'
 import Aos from 'aos'
+import { FeedbackCard } from '../../components/FeedbackCard'
 
 export const Home = () => {
   useEffect(() => {
@@ -14,7 +14,11 @@ export const Home = () => {
   return (
     <div>
       <Intro />
-      <Slider />
+      <div className="flex flex-wrap justify-center gap-4 mt-10 md:px-14">
+        {feedbacks.map((feedback) => (
+          <FeedbackCard key={feedback.id} description={feedback.description} />
+        ))}
+      </div>
       {/* Find out more */}
       <div
         data-aos="fade-up"
