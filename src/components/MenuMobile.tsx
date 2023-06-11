@@ -20,18 +20,28 @@ export const MenuMobile = ({
 
   useEffect(() => {
     const currentPath = location.pathname
-    if (currentPath === '/') {
-      setActiveItem('home')
-    } else if (currentPath === '/what-we-do') {
-      setActiveItem('whatWeDo')
-    } else if (currentPath === '/who-we-are') {
-      setActiveItem('whoWeAre')
-    } else if (currentPath === '/our-classes') {
-      setActiveItem('ourClasses')
-    } else if (currentPath === '/get-involved') {
-      setActiveItem('getInvolved')
-    } else if (currentPath === '/contact-us') {
-      setActiveItem('contactUs')
+
+    switch (currentPath) {
+      case '/':
+        setActiveItem('home')
+        break
+      case '/what-we-do':
+        setActiveItem('whatWeDo')
+        break
+      case '/who-we-are':
+        setActiveItem('whoWeAre')
+        break
+      case '/our-classes':
+        setActiveItem('ourClasses')
+        break
+      case '/get-involved':
+        setActiveItem('getInvolved')
+        break
+      case '/contact-us':
+        setActiveItem('contactUs')
+        break
+      default:
+        setActiveItem('')
     }
   }, [location.pathname])
 
