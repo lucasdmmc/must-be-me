@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ourClassesImage from '../assets/images/our-classes.png'
 import { Button } from './Button'
 
@@ -20,7 +21,9 @@ export const OurClasses = () => {
           elements of personal safety and self-defence. You don’t need any
           previous experience to attend, and our classes are completely free.
         </span>
-        <Button label="Find out how we can help" />
+        <Link to="/our-classes">
+          <Button label="Find out how we can help" />
+        </Link>
       </div>
     </div>
   )

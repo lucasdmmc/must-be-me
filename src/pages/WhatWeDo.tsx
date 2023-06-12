@@ -6,11 +6,12 @@ import why1 from '../assets/images/why-1.png'
 import why2 from '../assets/images/why-2.png'
 import { Button } from '../components/Button'
 import { HowWeDo } from '../components/HowWeDo'
+import { Link } from 'react-router-dom'
 
 export const WhatWeDo = () => {
   return (
     <div>
-      <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-10 mt-5 md:mt-20 items-center">
+      <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-10 mt-10 md:mt-20 items-center">
         <div className="mt-8 flex flex-col justify-center items-center md:items-center lg:items-start">
           <h1 className="text-orange100 text-3xl md:text-5xl font-semibold mb-2.5">
             WHAT WE DO
@@ -18,7 +19,9 @@ export const WhatWeDo = () => {
           <p className="text-center sm:text-start text-lg sm:text-3xl sm:mt-4 text-darkBlue">
             We make safety education accessible <br /> to everyone
           </p>
-          <Button label="Our classes" />
+          <Link to="/our-classes">
+            <Button label="Our classes" />
+          </Link>
         </div>
         <img className="mt-10 md:mt-0" src={introWhatWeDo} alt="" />
       </div>
@@ -94,7 +97,9 @@ export const WhatWeDo = () => {
             recognised safety-education charity, with successful projects in the
             UK and Kenya to date.
           </p>
-          <Button label="Get in touch" />
+          <Link to="/contact-us">
+            <Button label="Get in touch" />
+          </Link>
         </div>
         <img src={why2} alt="" />
       </div>

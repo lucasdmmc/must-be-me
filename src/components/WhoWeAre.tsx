@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import whoAreWeImage from '../assets/images/whoarewe.jpeg'
 import { Button } from './Button'
 
@@ -21,7 +22,9 @@ export const WhoWeAre = () => {
           age, background or geography – with free safety-improvement training.
           Our work enhances wellbeing and safeguards lives and communities.
         </span>
-        <Button label="Meet our team" />
+        <Link to="who-we-are">
+          <Button label="Meet our team" />
+        </Link>
       </div>
       <img
         className="object-cover w-[500px] lg:w-[700px] relative lg:h-[400px] lg:mr-32 p-10 lg:p-0 overflow-hidden flex items-center justify-center"

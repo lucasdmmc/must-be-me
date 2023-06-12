@@ -6,11 +6,15 @@ import { OurClasses } from '../../components/OurClasses'
 import { useEffect } from 'react'
 import Aos from 'aos'
 import { FeedbackCard } from '../../components/FeedbackCard'
+import { Link, useLocation } from 'react-router-dom'
+import { Button } from '../../components/Button.tsx'
 
 export const Home = () => {
+  const location = useLocation()
   useEffect(() => {
     Aos.init({ duration: 1500 })
-  }, [])
+    window.scrollTo(0, 0)
+  }, [location])
   return (
     <div>
       <Intro />
@@ -38,9 +42,9 @@ export const Home = () => {
           yourself out of danger.
         </span>
 
-        <button className="flex items-center justify-center min-w-[290px] uppercase text-white cursor-pointer transition duration-300 hover:bg-blue-900 bg-darkBlue p-5 rounded-[27.5px]">
-          Find out more
-        </button>
+        <Link to="/what-we-do">
+          <Button label="FIND OUT MORE" />
+        </Link>
       </div>
 
       {/* Section 1 */}

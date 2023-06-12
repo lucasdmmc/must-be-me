@@ -2,6 +2,7 @@ import getInvolvedIntroImage from '../assets/images/intro-getinvolved.png'
 import volunteerImage from '../assets/images/volunteer.png'
 import donateImage from '../assets/images/donate.png'
 import { Button } from '../components/Button'
+import { Link } from 'react-router-dom'
 
 export const GetInvolved = () => {
   return (
@@ -36,7 +37,9 @@ export const GetInvolved = () => {
               talent you have available, there’s a role for you. Click the
               volunteer button to discover how you can make a difference.
             </p>
-            <Button label="I want to volunteer" />
+            <Link to="/contact-us">
+              <Button label="I want to volunteer" />
+            </Link>
           </div>
         </div>
 
@@ -52,7 +55,9 @@ export const GetInvolved = () => {
               those who need it. Give now and help us improve lives by getting
               our expert training staff and courses to where they’re needed.
             </p>
-            <Button label="Donate now" />
+            <Link to="/contact-us">
+              <Button label="Donate now" />
+            </Link>
           </div>
           <img className="lg:-mt-20 w-[528px]" src={donateImage} alt="" />
         </div>

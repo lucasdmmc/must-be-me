@@ -24,21 +24,27 @@ export const MenuMobile = ({
     switch (currentPath) {
       case '/':
         setActiveItem('home')
+        setMenuIsVisible(false)
         break
       case '/what-we-do':
         setActiveItem('whatWeDo')
+        setMenuIsVisible(false)
         break
       case '/who-we-are':
         setActiveItem('whoWeAre')
+        setMenuIsVisible(false)
         break
       case '/our-classes':
         setActiveItem('ourClasses')
+        setMenuIsVisible(false)
         break
       case '/get-involved':
         setActiveItem('getInvolved')
+        setMenuIsVisible(false)
         break
       case '/contact-us':
         setActiveItem('contactUs')
+        setMenuIsVisible(false)
         break
       default:
         setActiveItem('')
@@ -53,7 +59,7 @@ export const MenuMobile = ({
     >
       <img
         onClick={() => setMenuIsVisible(false)}
-        className="absolute top-12 right-4 w-7"
+        className="absolute top-6 right-4 w-7"
         src={closeMenuImg}
         alt=""
       />

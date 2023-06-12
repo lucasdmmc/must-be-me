@@ -42,17 +42,19 @@ export const Header = ({ setMenuIsVisible }: HeaderProps) => {
   }, [location.pathname])
 
   return (
-    <div className="w-full pt-10 flex justify-between items-center">
-      <Link to="/">
-        <img src={logoImg} alt="" />
-      </Link>
+    <div className="w-full pt-4 flex justify-between items-center">
+      <div className="flex justify-between items-center">
+        <Link to="/">
+          <img src={logoImg} alt="" />
+        </Link>
 
-      <img
-        className="lg:hidden absolute top-12 right-4 w-7"
-        onClick={() => setMenuIsVisible(true)}
-        src={openMenuImg}
-        alt=""
-      />
+        <img
+          className="lg:hidden absolute right-4 w-7"
+          onClick={() => setMenuIsVisible(true)}
+          src={openMenuImg}
+          alt=""
+        />
+      </div>
 
       <ul className="hidden lg:flex gap-6 text-xl uppercase text-zinc-800 font-semibold">
         <li

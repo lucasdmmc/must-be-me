@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import introOurClasses from '../../assets/images/intro-ourclasses.png'
 import ourClassesImg from '../../assets/images/our-classes.png'
 
@@ -98,8 +99,9 @@ export const OurClasses = () => {
             Ready to experience Must Be Me for yourself and improve your safety
             confidence? Use our handy online tool to book your free class today.
           </span>
-
-          <Button label="Book a class" />
+          <Link to="/contact-us">
+            <Button label="Book a class" />
+          </Link>
         </div>
         <img className="px-6 sm:px-0" src={ourClassesImg} alt="" />
       </div>
