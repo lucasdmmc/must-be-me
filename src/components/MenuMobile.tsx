@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import closeMenuImg from '../assets/images/icon-menu-close.svg'
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 
@@ -64,9 +64,9 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('home')}
         >
-          <a className="ml-1" href="/">
+          <Link className="ml-1" to="/">
             Home
-          </a>
+          </Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -74,7 +74,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('whatWeDo')}
         >
-          <a href="/what-we-do">What we do</a>
+          <Link to="/what-we-do">What we do</Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -82,7 +82,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('whoWeAre')}
         >
-          <a href="/who-we-are">Who we are</a>
+          <Link to="/who-we-are">Who we are</Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -90,7 +90,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('ourClasses')}
         >
-          <a href="/our-classes">Our classes</a>
+          <Link to="/our-classes">Our classes</Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -98,7 +98,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('getInvolved')}
         >
-          <a href="/get-involved">Get involved</a>
+          <Link to="/get-involved">Get involved</Link>
         </li>
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
@@ -106,7 +106,7 @@ export const MenuMobile = ({
           }`}
           onClick={() => handleItemClick('contactUs')}
         >
-          <a href="/contact-us">Contact us</a>
+          <Link to="/contact-us">Contact us</Link>
         </li>
       </ul>
     </div>
