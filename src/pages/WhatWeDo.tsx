@@ -1,9 +1,12 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import introWhatWeDo from '../assets/images/intro-whatwedo.png'
 import arrowDown from '../assets/images/arrow-down-blue.svg'
 import why1 from '../assets/images/why-1.png'
 import why2 from '../assets/images/why-2.png'
 import { Button } from '../components/Button'
+import { HowWeDo } from '../components/HowWeDo'
+import { howWeDo } from '../data/howWeDo'
 
 export const WhatWeDo = () => {
   return (
@@ -50,11 +53,19 @@ export const WhatWeDo = () => {
         </div>
       </div>
 
-      {/* ======================= */}
-
-      {/* Here will be the slider */}
-
-      {/* ======================= */}
+      <div className="flex flex-col mt-4 md:my-10 items-center gap-10 p-10">
+        <span className="uppercase text-orange100 text-2xl md:text-5xl">
+          How we do it
+        </span>
+        <div className="flex flex-wrap justify-center gap-4">
+          {howWeDo.map((card) => (
+            <HowWeDo
+              description={card.description}
+              image={`public/${card.image}`}
+            />
+          ))}
+        </div>
+      </div>
 
       <div className="flex flex-col items-center pt-16">
         <h1 className="text-orange100 text-4xl pb-5">WHY WE DO IT</h1>
