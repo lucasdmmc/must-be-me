@@ -61,7 +61,7 @@ export const WhatWeDo = () => {
           {howWeDo.map((card) => (
             <HowWeDo
               description={card.description}
-              image={`public/${card.image}`}
+              image={`dist/${card.image}`}
             />
           ))}
         </div>
