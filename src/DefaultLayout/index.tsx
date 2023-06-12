@@ -19,10 +19,7 @@ export const DefaultLayout = () => {
           menuIsVisible && 'hidden'
         }`}
       >
-        <Header
-          menuIsVisible={menuIsVisible}
-          setMenuIsVisible={setMenuIsVisible}
-        />
+        <Header setMenuIsVisible={setMenuIsVisible} />
         <Outlet />
         <NewsLetter />
         <Footer />
