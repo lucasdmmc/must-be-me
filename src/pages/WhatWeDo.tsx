@@ -6,7 +6,6 @@ import why1 from '../assets/images/why-1.png'
 import why2 from '../assets/images/why-2.png'
 import { Button } from '../components/Button'
 import { HowWeDo } from '../components/HowWeDo'
-import { howWeDo } from '../data/howWeDo'
 
 export const WhatWeDo = () => {
   return (
@@ -58,12 +57,7 @@ export const WhatWeDo = () => {
           How we do it
         </span>
         <div className="flex flex-wrap justify-center gap-4">
-          {howWeDo.map((card) => (
-            <HowWeDo
-              description={card.description}
-              image={`dist/${card.image}`}
-            />
-          ))}
+          <HowWeDo />
         </div>
       </div>
 
