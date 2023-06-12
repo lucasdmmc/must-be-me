@@ -23,7 +23,7 @@ export const GetInvolved = () => {
 
         <div className="flex flex-wrap lg:flex-nowrap justify-center px-14 lg:px-36 lg:gap-28 gap-8 lg:py-20">
           <img src={volunteerImage} alt="" style={{ width: 428 }} />
-          <div className="text-center lg:text-start">
+          <div className="text-center flex flex-col items-center lg:text-start">
             <h1 className="text-2xl lg:text-4xl text-orange100">VOLUNTEER</h1>
             <p className="pt-4 leading-7 text-sm md:text-base">
               Our terrific team of volunteers makes Must Be Me possible. By
@@ -41,7 +41,7 @@ export const GetInvolved = () => {
         </div>
 
         <div className="flex flex-wrap-reverse lg:flex-nowrap justify-center mt-20 mb-20 lg:mb-14 lg:mt-0 px-14 lg:px-20 lg:gap-28 gap-8 lg:py-20">
-          <div className="text-center lg:text-start">
+          <div className="text-center flex flex-col items-center lg:text-start">
             <h1 className="text-darkBlue text-2xl lg:text-4xl">DONATE</h1>
             <p className="pt-4 leading-7 text-sm md:text-base">
               You can help us create a world where safety education is free,

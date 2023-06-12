@@ -11,8 +11,8 @@ import { howWeDo } from '../data/howWeDo'
 export const WhatWeDo = () => {
   return (
     <div>
-      <div className="w-full flex flex-wrap lg:flex-nowrap justify-center md:justify-between mt-5 md:mt-20 items-center">
-        <div className="mt-8 flex flex-col justify-center items-center md:items-start">
+      <div className="w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-10 mt-5 md:mt-20 items-center">
+        <div className="mt-8 flex flex-col justify-center items-center md:items-center lg:items-start">
           <h1 className="text-orange100 text-3xl md:text-5xl font-semibold mb-2.5">
             WHAT WE DO
           </h1>

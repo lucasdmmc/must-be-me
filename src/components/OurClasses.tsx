@@ -3,10 +3,10 @@ import { Button } from './Button'
 
 export const OurClasses = () => {
   return (
-    <div className="flex flex-wrap sm:flex-nowrap -mt-10 sm:mt-0 justify-between items-center gap-10 pb-20 bg-zinc-100">
+    <div className="flex flex-wrap lg:flex-nowrap -mt-10 sm:mt-0 justify-center items-center gap-10 pb-20 bg-zinc-100">
       <img className="px-6 sm:px-0" src={ourClassesImage} alt="" />
 
-      <div className="flex flex-col items-center sm:items-start gap-4 px-10">
+      <div className="flex flex-col items-center lg:items-start gap-4 px-10">
         <span className=" text-2xl md:text-4xl text-orange100 uppercase font-semibold">
           Our classes
         </span>

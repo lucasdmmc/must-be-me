@@ -48,13 +48,13 @@ export const Header = ({ setMenuIsVisible }: HeaderProps) => {
       </Link>
 
       <img
-        className="md:hidden absolute top-12 right-4 w-7"
+        className="lg:hidden absolute top-12 right-4 w-7"
         onClick={() => setMenuIsVisible(true)}
         src={openMenuImg}
         alt=""
       />
 
-      <ul className="hidden md:flex gap-6 text-xl uppercase text-zinc-800 font-semibold">
+      <ul className="hidden lg:flex gap-6 text-xl uppercase text-zinc-800 font-semibold">
         <li
           className={`transition duration-300 hover:text-zinc-500 cursor-pointer ${
             activeItem === 'home' ? 'border-b-4 border-orange100' : ''

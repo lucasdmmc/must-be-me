@@ -10,7 +10,7 @@ import { Faqs } from '../../components/Faqs'
 export const OurClasses = () => {
   return (
     <div className="w-full">
-      <div className=" w-full flex flex-wrap lg:flex-nowrap justify-center md:justify-between items-center gap-4 mt-20 pb-8 md:border-b ">
+      <div className=" w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center gap-4 mt-20 pb-8 md:border-b ">
         <div className="flex flex-col gap-2">
           <strong className="uppercase  text-center md:text-start text-3xl sm:text-5xl text-orange100 font-semibold leading-[48px]">
             Our Classes
