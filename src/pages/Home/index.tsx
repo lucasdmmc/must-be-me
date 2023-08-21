@@ -20,7 +20,10 @@ export const Home = () => {
       <Intro />
       <div className="flex flex-wrap justify-center gap-4 mt-10 md:px-14">
         {feedbacks.map((feedback) => (
-          <FeedbackCard key={feedback.id} description={feedback.description} />
+          <FeedbackCard 
+            key={feedback.id} 
+            description={feedback.description} 
+          />
         ))}
       </div>
       {/* Find out more */}
