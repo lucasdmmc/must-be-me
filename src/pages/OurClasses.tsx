@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
-import introOurClasses from '../../assets/images/intro-ourclasses.png'
-import ourClassesImg from '../../assets/images/our-classes.png'
+import introOurClasses from '../assets/images/intro-ourclasses.png'
+import ourClassesImg from '../assets/images/our-classes.png'
 
-import stepOne from '../../assets/images/step-one.png'
-import stepPath from '../../assets/images/step-path.png'
-import stepTwo from '../../assets/images/step-two.png'
-import { Button } from '../../components/Button'
-import { Faqs } from '../../components/Faqs'
+import stepOne from '../assets/images/step-one.png'
+import stepPath from '../assets/images/step-path.png'
+import stepTwo from '../assets/images/step-two.png'
+import { Button } from '../components/Button'
+import { Faqs } from '../components/Faqs'
+import { NewFaq } from '../components/newFaq'
 
 export const OurClasses = () => {
   return (
@@ -88,9 +89,10 @@ export const OurClasses = () => {
           with you to make sure you get the most out of your session.
         </p>
       </div>
-      <Faqs />
+      {/* <Faqs /> */}
+      <NewFaq />
 
-      <div className="flex flex-wrap sm:flex-nowrap -mt-10 mb-24 sm:mt-0 justify-between items-center gap-10 pb-20 bg-zinc-100">
+      <div className="flex flex-wrap sm:grid sm:grid-cols-2 mb-24 justify-between items-center gap-10 pb-20 bg-zinc-100">
         <div className="flex flex-col items-center sm:items-start gap-4 px-10">
           <span className="text-4xl text-orange100 uppercase font-semibold">
             Book a class

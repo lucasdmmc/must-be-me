@@ -1,5 +1,5 @@
 import introContactImg from '../assets/images/intro-contact.png'
-import { Form } from './components/Form'
+import { Form } from '../components/Form'
 
 export const ContactUs = () => {
   return (

@@ -1,13 +1,13 @@
-import pin from '../../assets/images/stat-pin.svg'
-import { feedbacks } from '../../data/feedbacks.ts'
-import { Intro } from '../../components/Intro'
-import { WhoWeAre } from '../../components/WhoWeAre'
-import { OurClasses } from '../../components/OurClasses'
+import pin from '../assets/images/stat-pin.svg'
+import { feedbacks } from '../data/feedbacks.ts'
+import { Intro } from '../components/Intro'
+import { WhoWeAre } from '../components/WhoWeAre'
+import { OurClasses } from '../components/OurClasses'
 import { useEffect } from 'react'
 import Aos from 'aos'
-import { FeedbackCard } from '../../components/FeedbackCard'
+import { FeedbackCard } from '../components/FeedbackCard'
 import { Link, useLocation } from 'react-router-dom'
-import { Button } from '../../components/Button.tsx'
+import { Button } from '../components/Button.tsx'
 
 export const Home = () => {
   const location = useLocation()

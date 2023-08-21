@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Button } from "../../components/Button";
+import { Button } from "./Button";
 import emailjs from 'emailjs-com';
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
