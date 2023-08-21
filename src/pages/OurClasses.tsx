@@ -6,7 +6,6 @@ import stepOne from '../assets/images/step-one.png'
 import stepPath from '../assets/images/step-path.png'
 import stepTwo from '../assets/images/step-two.png'
 import { Button } from '../components/Button'
-import { Faqs } from '../components/Faqs'
 import { NewFaq } from '../components/newFaq'
 
 export const OurClasses = () => {
